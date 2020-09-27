@@ -6,11 +6,11 @@ import os
 
 SEPARATOR = "<SEPARATOR>"
 DATA = "<DATA>"
-BUFFER_SIZER = 4096 #envia 4096 bytes a cada passo
+BUFFER_SIZER = 1024
 
 #Config do Server
-host = "172.25.164.188"
-port = 5002
+host = socket.gethostbyname(socket.gethostname())
+port = 5000
 
 s = socket.socket()
 print(f"[+] Conectando em: {host}:{port}")
